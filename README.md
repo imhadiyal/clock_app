@@ -27,6 +27,7 @@
 
 ## `Screenshots`
 
-<img src = "[https://github.com/JayKalsariya/clock_app/assets/141019761/156e5ece-217b-4a9c-881f-14a219ecca93](https://github.com/imhadiyal/clock_app/assets/146731392/d875c578-6070-4b5c-8a9a-5f52203ad27f)https://github.com/imhadiyal/clock_app/assets/146731392/d875c578-6070-4b5c-8a9a-5f52203ad27f" width = "250">
+![image](https://github.com/imhadiyal/clock_app/assets/146731392/46b15670-dc4c-4e80-b412-7e5b5b972022)
+
 
 
