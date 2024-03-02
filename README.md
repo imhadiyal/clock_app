@@ -27,7 +27,41 @@
 
 ## `Screenshots`
 
-![image](https://github.com/imhadiyal/clock_app/assets/146731392/46b15670-dc4c-4e80-b412-7e5b5b972022)
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/46b15670-dc4c-4e80-b412-7e5b5b972022" width = "300">
+
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/40ee1385-de37-4699-afed-033fd418f522" width = "300">
+
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/ae5150b0-a2af-42e8-92fc-df72e5bf3ec1" width = "300">
+
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/d32193fd-b686-4cb4-86a5-86a5252f5a6e" width = "300">
+
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/0350937f-e1d6-4822-997b-f44f86cbd6e5" width = "300">
+
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/3e153666-457b-4876-aa5f-e00667f66bec" width = "300">
+
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/f35256dd-c201-43c5-aed3-0e53d6762438" width = "300">
+
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/62c54a8f-7ee3-4c53-bc91-1228d269fc08" width = "300">
+
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/fc72fae7-4331-440f-a450-bb1c69e9a7e7" width = "300">
+
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/d1e5faf9-1232-4783-8daf-3ce45b3b20e8" width = "300">
+
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/b5693b89-75fc-4fa9-a16d-9df54b3a698c" width = "300">
+
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/56f5d039-8468-4779-9fda-01bcbd678553" width = "300">
+
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/db3b85ab-23a2-47d9-b106-8cb85a3d7800" width = "300">
+
+
+
+
+
+
+
+
+
+
 
 
 
