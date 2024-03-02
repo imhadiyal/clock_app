@@ -1,16 +1,32 @@
-# clock_app
+# Clock App
 
-A new Flutter project.
+## `1. Digital Clock`
+- The digital clock feature displays the current time in a clear and easy-to-read format. 
+- Users can customize the appearance of the digital clock, such as choosing between 12-hour and 24-hour formats, selecting different fonts, and adjusting the color scheme to suit their preferences.
+- Additional functionalities may include displaying the date, enabling alarms, and integrating with other apps or services for time-related notifications.
 
-## Getting Started
+## `2. Analogue Clock`
+- The analogue clock feature provides users with a traditional representation of time using hour, minute, and second hands on a clock face.
+- Users can choose from a variety of clock face designs, ranging from classic to modern styles, and customize the size and placement of the analogue clock widget on their device.
+- Interactive features may include the ability to set alarms or reminders directly from the analogue clock interface, as well as options for adjusting the clock's accuracy and synchronization with external time sources.
 
-This project is a starting point for a Flutter application.
+## `3. Stopwatch`
+- The stopwatch feature allows users to measure elapsed time accurately, with precision down to milliseconds.
+- Users can start, stop, and reset the stopwatch with intuitive controls, making it ideal for timing activities such as workouts, cooking, or sporting events.
+- Additional functionalities may include lap timing, split timing, and the ability to save and share recorded time intervals for future reference or analysis.
+## `Technology Stack`
 
-A few resources to get you started if this is your first Flutter project:
+> Frontend     : `Dart`
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+> Backend      : `Dart`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+> Tools        : `Android Studio`
+
+> Project Type : `Flutter`
+
+
+## `Screenshots`
+
+<img src = "[https://github.com/JayKalsariya/clock_app/assets/141019761/156e5ece-217b-4a9c-881f-14a219ecca93](https://github.com/imhadiyal/clock_app/assets/146731392/d875c578-6070-4b5c-8a9a-5f52203ad27f)https://github.com/imhadiyal/clock_app/assets/146731392/d875c578-6070-4b5c-8a9a-5f52203ad27f" width = "250">
+
+
