@@ -2,18 +2,22 @@
 
 ## `1. Digital Clock`
 - The digital clock feature displays the current time in a clear and easy-to-read format. 
-- Users can customize the appearance of the digital clock, such as choosing between 12-hour and 24-hour formats, selecting different fonts, and adjusting the color scheme to suit their preferences.
-- Additional functionalities may include displaying the date, enabling alarms, and integrating with other apps or services for time-related notifications.
+- Classic analogue clock display with hour, minute, and second hands.
+- Accurate representation of time with smooth hand movements.
 
 ## `2. Analogue Clock`
 - The analogue clock feature provides users with a traditional representation of time using hour, minute, and second hands on a clock face.
 - Users can choose from a variety of clock face designs, ranging from classic to modern styles, and customize the size and placement of the analogue clock widget on their device.
 - Interactive features may include the ability to set alarms or reminders directly from the analogue clock interface, as well as options for adjusting the clock's accuracy and synchronization with external time sources.
 
-## `3. Stopwatch`
-- The stopwatch feature allows users to measure elapsed time accurately, with precision down to milliseconds.
-- Users can start, stop, and reset the stopwatch with intuitive controls, making it ideal for timing activities such as workouts, cooking, or sporting events.
-- Additional functionalities may include lap timing, split timing, and the ability to save and share recorded time intervals for future reference or analysis.
+## `3. Strap Clock`
+- Modern strap-style clock design with customizable strap colors and styles.
+- Displays time in a unique and stylish format.
+
+## `4. Custom Background Image`
+- Users can personalize the app by adding custom background images.
+- Images will be predefined in the app.
+
 ## `Technology Stack`
 
 > Frontend     : `Dart`
@@ -53,8 +57,9 @@
 
 <img src = "https://github.com/imhadiyal/clock_app/assets/146731392/db3b85ab-23a2-47d9-b106-8cb85a3d7800" width = "200">
 
-
-
+## `4. Acknowledgements`
+- The Clock App project is inspired by various clock and timekeeping applications available in the market.
+- Special thanks to the open-source community for their contributions and support.
 
 
 
