@@ -39,7 +39,7 @@
 
 <img src = "https://github.com/imhadiyal/clock_app/assets/146731392/3e153666-457b-4876-aa5f-e00667f66bec" width = "200">
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/f35256dd-c201-43c5-aed3-0e53d6762438" width = "200">
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/d67a7d77-022e-4450-befa-9341ace85ec5" width = "200">
 
 <img src = "https://github.com/imhadiyal/clock_app/assets/146731392/62c54a8f-7ee3-4c53-bc91-1228d269fc08" width = "200">
 
