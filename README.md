@@ -57,7 +57,7 @@
 
 <img src = "https://github.com/imhadiyal/clock_app/assets/146731392/db3b85ab-23a2-47d9-b106-8cb85a3d7800" width = "200">
 
-## `4. Acknowledgements`
+## `Acknowledgements`
 - The Clock App project is inspired by various clock and timekeeping applications available in the market.
 - Special thanks to the open-source community for their contributions and support.
 
