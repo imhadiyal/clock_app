@@ -18,6 +18,13 @@
 - Users can personalize the app by adding custom background images.
 - Images will be predefined in the app.
 
+## `5. Timer`
+- **Description:** Enables users to set countdowns for various tasks or activities.
+- **Customization Options:**
+  - Timer presets (5 minutes, 15 minutes, etc.).
+  - Personalized timers with specific durations and labels.
+  - Visual and audible notifications upon completion.
+
 ## `Technology Stack`
 
 > Frontend     : `Dart`
