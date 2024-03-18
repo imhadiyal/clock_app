@@ -38,9 +38,10 @@
 
 ## `Screenshots`
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/46b15670-dc4c-4e80-b412-7e5b5b972022" width = "200">
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/40ee1385-de37-4699-afed-033fd418f522" width = "200">
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/5519fe5d-cd91-4bff-bc3b-0848f2870713" width = "200">
+
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/2e0c8607-bc41-4933-987d-e7ac26636eda" width = "200">
 
 <img src = "https://github.com/imhadiyal/clock_app/assets/146731392/ae5150b0-a2af-42e8-92fc-df72e5bf3ec1" width = "200">
 
