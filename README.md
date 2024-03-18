@@ -39,15 +39,17 @@
 ## `Screenshots`
 
 
+
+
 <img src = "https://github.com/imhadiyal/clock_app/assets/146731392/5519fe5d-cd91-4bff-bc3b-0848f2870713" width = "200">
 
 <img src = "https://github.com/imhadiyal/clock_app/assets/146731392/2e0c8607-bc41-4933-987d-e7ac26636eda" width = "200">
 
 <img src = "https://github.com/imhadiyal/clock_app/assets/146731392/ae5150b0-a2af-42e8-92fc-df72e5bf3ec1" width = "200">
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/d32193fd-b686-4cb4-86a5-86a5252f5a6e" width = "200">
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/686b3c08-c80f-4158-9364-f885a07bb37a" width = "200">
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/0350937f-e1d6-4822-997b-f44f86cbd6e5" width = "200">
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/9cd5e4e6-9ff0-48c8-a509-38160937e603" width = "200">
 
 <img src = "https://github.com/imhadiyal/clock_app/assets/146731392/3e153666-457b-4876-aa5f-e00667f66bec" width = "200">
 
