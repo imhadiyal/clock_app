@@ -40,9 +40,6 @@
 
 
 
-
-
-
 <img src = "https://github.com/imhadiyal/clock_app/assets/146731392/5519fe5d-cd91-4bff-bc3b-0848f2870713" width = "200">
 
 <img src = "https://github.com/imhadiyal/clock_app/assets/146731392/2e0c8607-bc41-4933-987d-e7ac26636eda" width = "200">
@@ -63,13 +60,13 @@
 
 <img src = "https://github.com/imhadiyal/clock_app/assets/146731392/df9dc752-037f-44f2-bb9a-8c8732f87a18" width = "200">
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/d1e5faf9-1232-4783-8daf-3ce45b3b20e8" width = "200">
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/c1b8496a-c24f-41ef-93b0-23717d5fa12c" width = "200">
 
 <img src = "https://github.com/imhadiyal/clock_app/assets/146731392/b5693b89-75fc-4fa9-a16d-9df54b3a698c" width = "200">
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/56f5d039-8468-4779-9fda-01bcbd678553" width = "200">
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/ef8a4fb4-be9d-480d-86ef-7b1b8e9c4760" width = "200">
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/db3b85ab-23a2-47d9-b106-8cb85a3d7800" width = "200">
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/8b9aef19-d11a-4f44-b777-095dc363936b" width = "200">
 
 ## `Acknowledgements`
 - The Clock App project is inspired by various clock and timekeeping applications available in the market.
