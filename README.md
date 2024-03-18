@@ -51,7 +51,9 @@
 
 <img src = "https://github.com/imhadiyal/clock_app/assets/146731392/9cd5e4e6-9ff0-48c8-a509-38160937e603" width = "200">
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/3e153666-457b-4876-aa5f-e00667f66bec" width = "200">
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/cbc3b4e2-eb54-4ffd-a25b-b0961525b823" width = "200">
+
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/b81fae00-2dda-43d5-8c7d-7f319f606419" width = "200">
 
 <img src = "https://github.com/imhadiyal/clock_app/assets/146731392/d67a7d77-022e-4450-befa-9341ace85ec5" width = "200">
 
