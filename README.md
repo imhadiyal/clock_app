@@ -2,18 +2,29 @@
 
 ## `1. Digital Clock`
 - The digital clock feature displays the current time in a clear and easy-to-read format. 
-- Users can customize the appearance of the digital clock, such as choosing between 12-hour and 24-hour formats, selecting different fonts, and adjusting the color scheme to suit their preferences.
-- Additional functionalities may include displaying the date, enabling alarms, and integrating with other apps or services for time-related notifications.
+- Classic analogue clock display with hour, minute, and second hands.
+- Accurate representation of time with smooth hand movements.
 
 ## `2. Analogue Clock`
 - The analogue clock feature provides users with a traditional representation of time using hour, minute, and second hands on a clock face.
 - Users can choose from a variety of clock face designs, ranging from classic to modern styles, and customize the size and placement of the analogue clock widget on their device.
 - Interactive features may include the ability to set alarms or reminders directly from the analogue clock interface, as well as options for adjusting the clock's accuracy and synchronization with external time sources.
 
-## `3. Stopwatch`
-- The stopwatch feature allows users to measure elapsed time accurately, with precision down to milliseconds.
-- Users can start, stop, and reset the stopwatch with intuitive controls, making it ideal for timing activities such as workouts, cooking, or sporting events.
-- Additional functionalities may include lap timing, split timing, and the ability to save and share recorded time intervals for future reference or analysis.
+## `3. Strap Clock`
+- Modern strap-style clock design with customizable strap colors and styles.
+- Displays time in a unique and stylish format.
+
+## `4. Custom Background Image`
+- Users can personalize the app by adding custom background images.
+- Images will be predefined in the app.
+
+## `5. Timer`
+- **Description:** Enables users to set countdowns for various tasks or activities.
+- **Customization Options:**
+  - Timer presets (5 minutes, 15 minutes, etc.).
+  - Personalized timers with specific durations and labels.
+  - Visual and audible notifications upon completion.
+
 ## `Technology Stack`
 
 > Frontend     : `Dart`
@@ -27,34 +38,39 @@
 
 ## `Screenshots`
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/46b15670-dc4c-4e80-b412-7e5b5b972022" width = "200">
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/40ee1385-de37-4699-afed-033fd418f522" width = "200">
+
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/5519fe5d-cd91-4bff-bc3b-0848f2870713" width = "200">
+
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/2e0c8607-bc41-4933-987d-e7ac26636eda" width = "200">
 
 <img src = "https://github.com/imhadiyal/clock_app/assets/146731392/ae5150b0-a2af-42e8-92fc-df72e5bf3ec1" width = "200">
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/d32193fd-b686-4cb4-86a5-86a5252f5a6e" width = "200">
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/686b3c08-c80f-4158-9364-f885a07bb37a" width = "200">
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/0350937f-e1d6-4822-997b-f44f86cbd6e5" width = "200">
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/9cd5e4e6-9ff0-48c8-a509-38160937e603" width = "200">
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/3e153666-457b-4876-aa5f-e00667f66bec" width = "200">
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/cbc3b4e2-eb54-4ffd-a25b-b0961525b823" width = "200">
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/f35256dd-c201-43c5-aed3-0e53d6762438" width = "200">
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/b81fae00-2dda-43d5-8c7d-7f319f606419" width = "200">
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/62c54a8f-7ee3-4c53-bc91-1228d269fc08" width = "200">
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/38a89471-d6b1-4b2b-87d0-a2eef86d601f" width = "200">
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/fc72fae7-4331-440f-a450-bb1c69e9a7e7" width = "200">
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/6d272847-b51d-4a70-84fc-3290955dd10b" width = "200">
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/d1e5faf9-1232-4783-8daf-3ce45b3b20e8" width = "200">
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/df9dc752-037f-44f2-bb9a-8c8732f87a18" width = "200">
+
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/c1b8496a-c24f-41ef-93b0-23717d5fa12c" width = "200">
 
 <img src = "https://github.com/imhadiyal/clock_app/assets/146731392/b5693b89-75fc-4fa9-a16d-9df54b3a698c" width = "200">
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/56f5d039-8468-4779-9fda-01bcbd678553" width = "200">
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/ef8a4fb4-be9d-480d-86ef-7b1b8e9c4760" width = "200">
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/db3b85ab-23a2-47d9-b106-8cb85a3d7800" width = "200">
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/8b9aef19-d11a-4f44-b777-095dc363936b" width = "200">
 
-
-
+## `Acknowledgements`
+- The Clock App project is inspired by various clock and timekeeping applications available in the market.
+- Special thanks to the open-source community for their contributions and support.
 
 
 
