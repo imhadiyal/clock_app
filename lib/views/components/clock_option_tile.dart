@@ -6,13 +6,13 @@ Widget clockOptionTile({
   required Function(bool) onChanged,
 }) {
   return Container(
-    padding: EdgeInsets.all(16),
+    padding: const EdgeInsets.all(16),
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
           title,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 18,
           ),
         ),

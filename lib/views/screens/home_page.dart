@@ -1,6 +1,8 @@
-import 'dart:math';
+import 'dart:async';
+import 'package:analog_clock/analog_clock.dart';
 import 'package:clock_app/views/components/clock_option_tile.dart';
 import 'package:flutter/material.dart';
+import 'package:slide_digital_clock/slide_digital_clock.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -11,23 +13,86 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   DateTime d = DateTime.now();
-  bool _Analog = true;
-  bool _isStrap = false;
-  bool _digital = false;
-  bool _img = false;
+  Timer? timer;
+  bool started = true;
+  List laps = [];
+  bool Analog = true;
+  bool isStrap = false;
+  bool digital = false;
+  bool img = false;
+  bool stopwatch = false;
+  int sec = 0;
+  int min = 0;
+  int hou = 0;
+  String sSec = "00";
+  String sMin = "00";
+  String sHou = "00";
+  void start() {
+    started = true;
+    timer = Timer.periodic(
+      const Duration(seconds: 1),
+      (timer) {
+        sec++;
+        if (sec > 59) {
+          if (min > 59) {
+            hou++;
+            min = 0;
+          } else {
+            min++;
+            sec = 0;
+          }
+        }
+        setState(
+          () {
+            min = min;
+            hou = hou;
+
+            sSec = (sec >= 10) ? "$sec" : "0$sec";
+            sHou = (sec >= 10) ? "$hou" : "0$hou";
+            sMin = (min >= 10) ? "$min" : "0$min";
+          },
+        );
+      },
+    );
+  }
+
+  //Lap Process
+  void addLaps() {
+    String lap = "$sHou:$sMin:$sSec";
+    setState(() {
+      laps.add(lap);
+    });
+  }
+
+  void resetStopWatch() {
+    timer!.cancel();
+    setState(() {
+      started = false;
+      sec = 0;
+      min = 0;
+      hou = 0;
+
+      sSec = "00";
+      sMin = "00";
+      sHou = "00";
+      started = false;
+    });
+  }
+
   String bgImage = "";
-  List allimage = [
-    "https://i.pinimg.com/564x/6a/aa/ab/6aaaab354709ef2fa16fbd72299c8f55.jpg",
-    "https://thumbs.dreamstime.com/b/tile-floor-brick-wall-background-lights-night-hd-image-large-resolution-can-be-used-as-desktop-wallpaper-real-zise-184215885.jpg",
+  List allimagurl = [
+    "https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    "https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEyL3Jhd3BpeGVsX29mZmljZV8yM193YXRlcmNvbG9yX2lsbHVzdHJhdGlvbl9vZl9ncmVlbl9wYXN0ZWxfYmFja181Zjg4YmIwZS0xNWZkLTRkNGItYTNlNS0zZDYyOTdiNjk3NDdfMS5qcGc.jpg",
     "https://i.pinimg.com/736x/5e/4d/3d/5e4d3d3e9d3ca61cf288c25fac5cd590.jpg",
-    "https://images.unsplash.com/photo-1483232539664-d89822fb5d3e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG8lMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww",
-    "https://i.pinimg.com/originals/eb/ac/70/ebac7025c4b0278ffd4bf23462611545.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO6ivajcK0jdi5wcH5uE4fORAdH2oxPyt6spGqCJGxnmX0ekgdQhT7jTff7304vlsW00w&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjqkv1AqEZdDzuNtjbasddA6C4dMp7lQvEmM5Lx7ohhrAzLz2ZbzhL6iKGvpIzu-sqwwQ&usqp=CAU",
     "https://e1.pxfuel.com/desktop-wallpaper/111/132/desktop-wallpaper-cb-backgrounds-green-cb-background.jpg",
-    "https://t4.ftcdn.net/jpg/03/59/98/31/360_F_359983118_OUEqWt9VPKM2rysrc0S9AeQ2vP1VrkZ6.jpg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ50Brdwt97TqhP2cEco0mMxlPPhrgNH_oDFg&usqp=CAU",
-    "https://img.freepik.com/free-vector/geometric-shapes-neon-lights-background_23-2148445830.jpg?q=10&h=200",
-    "https://images.pexels.com/photos/253905/pexels-photo-253905.jpeg?cs=srgb&dl=pexels-juraj-masar-253905.jpg&fm=jpg",
+    "https://images.freecreatives.com/wp-content/uploads/2016/04/Beautiful-Green-Plain-Background-.jpg",
+    "https://i.pinimg.com/originals/b6/78/a2/b678a2998e02da50413b35f061e9d09a.jpg",
+    "https://images.template.net/wp-content/uploads/2015/11/25190806/Free-Download-Brown-Plain-Wood-Background.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs4iYEe6Zn2YSHgaqexNj2HtdNgQzSDlDAiw&usqp=CAU",
   ];
+
   void startClock() async {
     await Future.delayed(const Duration(seconds: 1), () {
       d = DateTime.now();
@@ -47,35 +112,43 @@ class _HomePageState extends State<HomePage> {
     Size size = MediaQuery.sizeOf(context);
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.white60,
         title: const Text("Clock App"),
       ),
       drawer: Drawer(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const UserAccountsDrawerHeader(
+              currentAccountPicture: CircleAvatar(),
               accountName: Text("Darshan"),
               accountEmail: Text("darshan@gmail.com"),
             ),
             clockOptionTile(
                 title: ("Analog"),
-                val: _Analog,
-                onChanged: (val) => _Analog = !_Analog),
+                val: Analog,
+                onChanged: (val) => Analog = !Analog),
             clockOptionTile(
                 title: ("Strap"),
-                val: _isStrap,
-                onChanged: (val) => _isStrap = !_isStrap),
+                val: isStrap,
+                onChanged: (val) => isStrap = !isStrap),
             clockOptionTile(
                 title: ("Digital"),
-                val: _digital,
-                onChanged: (val) => _digital = !_digital),
+                val: digital,
+                onChanged: (val) => digital = !digital),
             clockOptionTile(
-                title: ("image"), val: _img, onChanged: (val) => _img = !_img),
+                title: ("Stop Watch"),
+                val: stopwatch,
+                onChanged: (val) => stopwatch = !stopwatch),
+            clockOptionTile(
+                title: ("image"), val: img, onChanged: (val) => img = !img),
             Visibility(
-              visible: _img,
+              visible: img,
               child: SingleChildScrollView(
+                physics: BouncingScrollPhysics(),
                 scrollDirection: Axis.horizontal,
                 child: Row(
-                    children: allimage
+                    children: allimagurl
                         .map(
                           (e) => GestureDetector(
                             onTap: () {
@@ -83,24 +156,20 @@ class _HomePageState extends State<HomePage> {
                               setState(() {});
                             },
                             child: Container(
-                              margin: const EdgeInsets.only(
-                                  left: 10, right: 10, bottom: 10),
-                              height: size.height * 0.1,
-                              width: size.width * 0.2,
-                              decoration: const BoxDecoration(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(16)),
-                                boxShadow: [
+                              margin: EdgeInsets.all(10),
+                              height: size.height * 0.15,
+                              width: size.width * 0.25,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                boxShadow: const [
                                   BoxShadow(
                                     color: Colors.grey,
                                     offset: Offset(5, 5),
-                                    blurRadius: 7,
-                                  ),
+                                    blurRadius: 5,
+                                  )
                                 ],
-                              ),
-                              child: Image.network(
-                                e,
-                                fit: BoxFit.cover,
+                                image: DecorationImage(
+                                    image: NetworkImage(e), fit: BoxFit.cover),
                               ),
                             ),
                           ),
@@ -112,9 +181,10 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       body: Container(
+        margin: EdgeInsets.all(10),
         decoration: BoxDecoration(
           image: DecorationImage(
-              image: _img
+              image: img
                   ? NetworkImage(bgImage)
                   : const NetworkImage(
                       "https://i.pinimg.com/1200x/84/2a/d6/842ad68b315b0f586c30b465221da609.jpg",
@@ -128,62 +198,17 @@ class _HomePageState extends State<HomePage> {
           children: [
             //Analog
             Visibility(
-              visible: _Analog,
-              child: Stack(
+              visible: Analog,
+              child: const Stack(
                 alignment: Alignment.center,
                 children: [
-                  ...List.generate(
-                    60,
-                    (index) => Transform.rotate(
-                      angle: index * (pi * 2) / 60,
-                      child: Divider(
-                        endIndent: index % 5 == 0
-                            ? size.width * 0.88
-                            : size.width * 0.9,
-                        thickness: 2,
-                        color: index % 5 == 0 ? Colors.red : Colors.grey,
-                      ),
-                    ),
-                  ),
-                  Transform.rotate(
-                    angle: pi / 2,
-                    child: Transform.rotate(
-                      angle: d.hour * (pi * 2) / 12,
-                      child: Divider(
-                        indent: 50,
-                        endIndent: size.width * 0.5 - 16,
-                        color: Colors.black,
-                        thickness: 4,
-                      ),
-                    ),
-                  ),
-                  Transform.rotate(
-                    angle: pi / 2,
-                    child: Transform.rotate(
-                      angle: d.minute * (pi * 2) / 60,
-                      child: Divider(
-                        indent: 50,
-                        endIndent: size.width * 0.5 - 16,
-                        color: Colors.black,
-                        thickness: 2,
-                      ),
-                    ),
-                  ),
-                  Transform.rotate(
-                    angle: pi / 2,
-                    child: Transform.rotate(
-                      angle: d.second * (pi * 2) / 60,
-                      child: Divider(
-                        indent: 50,
-                        endIndent: size.width * 0.4 - 16,
-                        color: Colors.red,
-                        thickness: 2.5,
-                      ),
-                    ),
-                  ),
-                  const CircleAvatar(
-                    backgroundColor: Colors.red,
-                    radius: 10,
+                  AnalogClock(
+                    width: 400,
+                    showDigitalClock: false,
+                    showAllNumbers: true,
+                    showSecondHand: true,
+                    showTicks: true,
+                    tickColor: Colors.black,
                   ),
                 ],
               ),
@@ -191,7 +216,7 @@ class _HomePageState extends State<HomePage> {
 
             //Strap
             Visibility(
-              visible: _isStrap,
+              visible: isStrap,
               child: Stack(
                 alignment: Alignment.center,
                 children: [
@@ -220,114 +245,99 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             //Digital
-            Visibility(
-              visible: _digital,
+            Padding(
+              padding: const EdgeInsets.all(20),
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Container(
-                        margin: EdgeInsets.all(16),
-                        height: size.height * 0.1,
-                        width: size.width * 0.17,
-                        decoration: const BoxDecoration(
-                            borderRadius: BorderRadius.all(
-                              Radius.circular(16),
-                            ),
-                            boxShadow: [
-                              BoxShadow(
-                                  color: Colors.grey,
-                                  offset: Offset(3, 3),
-                                  blurRadius: 7)
-                            ],
-                            color: Colors.white),
-                        child: Align(
-                          alignment: Alignment.center,
-                          child: Text(
-                            d.hour.toString(),
-                            style: const TextStyle(fontSize: 40),
-                          ),
+                  Visibility(
+                    visible: digital,
+                    child: Transform.scale(
+                      scale: 5,
+                      child: DigitalClock(
+                        secondDigitTextStyle:
+                            const TextStyle(fontSize: 8, color: Colors.black),
+                        hourMinuteDigitTextStyle:
+                            const TextStyle(fontSize: 10, color: Colors.black),
+                        amPmDigitTextStyle: const TextStyle(
+                          color: Colors.black,
+                          fontSize: 5,
+                          fontWeight: FontWeight.bold,
                         ),
+                        is24HourTimeFormat: false,
+                        showSecondsDigit: true,
                       ),
-                      const Text(
-                        ":",
-                        style: TextStyle(fontSize: 40),
-                      ),
-                      Container(
-                        margin: EdgeInsets.all(16),
-                        height: size.height * 0.1,
-                        width: size.width * 0.17,
-                        decoration: const BoxDecoration(
-                            borderRadius: BorderRadius.all(
-                              Radius.circular(16),
-                            ),
-                            boxShadow: [
-                              BoxShadow(
-                                  color: Colors.grey,
-                                  offset: Offset(3, 3),
-                                  blurRadius: 7)
-                            ],
-                            color: Colors.white),
-                        child: Align(
-                          alignment: Alignment.center,
-                          child: Text(
-                            d.minute.toString(),
-                            style: const TextStyle(fontSize: 40),
-                          ),
-                        ),
-                      ),
-                      const Text(
-                        ":",
-                        style: TextStyle(fontSize: 40),
-                      ),
-                      Container(
-                        margin: const EdgeInsets.all(16),
-                        height: size.height * 0.1,
-                        width: size.width * 0.17,
-                        decoration: const BoxDecoration(
-                            borderRadius: BorderRadius.all(
-                              Radius.circular(16),
-                            ),
-                            boxShadow: [
-                              BoxShadow(
-                                  color: Colors.grey,
-                                  offset: Offset(3, 3),
-                                  blurRadius: 7)
-                            ],
-                            color: Colors.white),
-                        child: Align(
-                          alignment: Alignment.center,
-                          child: Text(
-                            d.second.toString(),
-                            style: const TextStyle(fontSize: 40),
-                          ),
-                        ),
-                      ),
-                    ],
+                    ),
                   ),
-                  Container(
-                    margin: const EdgeInsets.all(16),
-                    height: size.height * 0.1,
-                    width: size.width * 0.55,
-                    decoration: const BoxDecoration(
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(16),
+                  //stopwatch
+                  Visibility(
+                    visible: stopwatch,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          "$sHou : $sMin : $sSec",
+                          style: const TextStyle(
+                            color: Colors.black,
+                            fontSize: 56,
+                          ),
                         ),
-                        boxShadow: [
-                          BoxShadow(
-                              color: Colors.grey,
-                              offset: Offset(3, 3),
-                              blurRadius: 7)
-                        ],
-                        color: Colors.white),
-                    child: Align(
-                      alignment: Alignment.center,
-                      child: Text(
-                        (d.day, d.month, d.year).toString(),
-                        style: const TextStyle(fontSize: 40),
-                      ),
+                        ElevatedButton(
+                          onPressed: () {
+                            start();
+                          },
+                          child: Text(
+                            started ? "Started" : "Start",
+                            style: (TextStyle(fontSize: 18)),
+                          ),
+                        ),
+                        ElevatedButton(
+                          onPressed: () {
+                            resetStopWatch();
+                          },
+                          child: const Text(
+                            "Reset",
+                            style: (TextStyle(fontSize: 18)),
+                          ),
+                        ),
+                        IconButton(
+                          onPressed: () {
+                            addLaps();
+                          },
+                          icon: const Icon(
+                            Icons.flag,
+                          ),
+                        ),
+                        Expanded(
+                          child: ListView.builder(
+                            itemCount: laps.length,
+                            itemBuilder: (context, index) {
+                              return Padding(
+                                padding: const EdgeInsets.all(16.0),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      "Lap ${index + 1}",
+                                      style: const TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 16,
+                                      ),
+                                    ),
+                                    Text(
+                                      " ${laps[index]}",
+                                      style: const TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 16,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              );
+                            },
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ],
