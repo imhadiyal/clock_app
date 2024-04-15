@@ -48,29 +48,26 @@
 
 <img src = "https://github.com/imhadiyal/clock_app/assets/146731392/686b3c08-c80f-4158-9364-f885a07bb37a" width = "200">
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/9cd5e4e6-9ff0-48c8-a509-38160937e603" width = "200">
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/38911222-5d23-4562-b4a6-aa664703780e" width = "200">
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/cbc3b4e2-eb54-4ffd-a25b-b0961525b823" width = "200">
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/630cb7a3-18e0-4a8a-a679-0c88e1ef63cd" width = "200">
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/b81fae00-2dda-43d5-8c7d-7f319f606419" width = "200">
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/27c2c96e-3324-47ca-9672-24f4441101b1" width = "200">
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/38a89471-d6b1-4b2b-87d0-a2eef86d601f" width = "200">
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/1c1f2a7f-51d6-4d18-bd44-71c2a2bd30fd" width = "200">
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/6d272847-b51d-4a70-84fc-3290955dd10b" width = "200">
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/752392e8-6dcc-432b-898e-00d800b6dbe5" width = "200">
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/df9dc752-037f-44f2-bb9a-8c8732f87a18" width = "200">
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/29594a9f-d211-4aad-bbb7-14674070cf18" width = "200">
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/c1b8496a-c24f-41ef-93b0-23717d5fa12c" width = "200">
+<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/ceb85c1f-5057-4806-a202-4f4c5363c676" width = "200">
 
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/b5693b89-75fc-4fa9-a16d-9df54b3a698c" width = "200">
-
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/ef8a4fb4-be9d-480d-86ef-7b1b8e9c4760" width = "200">
-
-<img src = "https://github.com/imhadiyal/clock_app/assets/146731392/8b9aef19-d11a-4f44-b777-095dc363936b" width = "200">
 
 ## `Acknowledgements`
 - The Clock App project is inspired by various clock and timekeeping applications available in the market.
 - Special thanks to the open-source community for their contributions and support.
+
+
 
 
 
